@@ -3,6 +3,15 @@ const nextButton = document.getElementById('next-btn');
 const questionContainerElement = document.getElementById('question-container');
 const questionElement = document.getElementById('question');
 const answerButtonsElement = document.getElementById('answer-buttons');
+//Nav
+const toggleButton = document.getElementById('navbar-toggle');
+const navbarLinks = document.getElementById('navbar-links');
+
+
+toggleButton.addEventListener('click', () => {
+    navbarLinks.classList.toggle('active');
+});
+
 
 let shuffledQuestions, currentQuestionIndex;
 
